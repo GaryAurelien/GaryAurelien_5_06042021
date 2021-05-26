@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+
+    <title>Page panier</title>
+    <meta name="description" content="Vente en ligne d'ours en peluche faits à la main de qualité Française.">
+    <meta name="robots" content="index,follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0, viewport-fit=cover">
+    <script src="https://kit.fontawesome.com/cd87985c5c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/ajax.js"></script>
+    <script src="js/views/detailOursonView.js" defer></script>
+    <script src="js/views/listeOursonView.js" defer></script>
+    <script src="js/views/panierView.js"></script>
+    <script src="js/Controleur.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo_orinoco">
+            <a href="index.html" class="img_orinoco" ><img class="img_orinoco" src="img/15675819263013_image1.png" alt="logo_orinoco" /></a>
+            <div class="nav_header">
+                <a class="a_retour_aceuil" href="index.html"><i class="fas fa-home"></i>Acceuil</a>
+                <a class="a_panier" href="#"><i class="fas fa-shopping-basket"></i>Panier</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Les produit sélectionnées : </h2>
+        <div id="container_produits_panier">
+            <h2>Les produit sélectionnées : </h2>
+        </div>
+        <div id="affichage_prix_total_panier">
+            <p id="prix_total"></p>
+        </div>
+        <div id="formulaireCommande">
+            <h2>Remplissez le formulaire pour valider la commande</h2>
+        <form method="POST" autocomplete="on">
+            <div>
+                <label fro="lastName" for="prenom">Nom :</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Dupont" required pattern="[a-zA-ZÀ-ÿ-Zàâäéèêëïîôöùûüç[ -]]{2,30}">
+            </div>
+            <div>
+                <label for="firstName" for="name">Prénom :</label>
+                <input type="text" id="firstName" name="firstName"  placeholder="Jean"required pattern="[A-Za-z-àâäéèêëïîôöùûüç[ -]]{2,30}">
+            </div>
+            <div>
+                <label for="adresse" for="adresse" >Adresse :</label>
+                <input id="adresse" name="adresse" placeholder="1234 rue ..." required pattern= "[0-9]{1,3}(?:(?:[,. ]?){1}[-a-zA-Zàâäéèêëïîôöùûüç]+)*">
+            </div>
+            <div>
+                <label for="city">Ville :</label>
+                <input type="text" id="city" name="city" placeholder="Paris" required pattern="[a-zA-Z]{2,30}">
+            </div>
+            <div>
+                <label for="email">e-mail :</label>
+                <input type="email" id="email" name="email" placeholder="Exemple@exemple.com" required pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})">
+            </div>
+            <button id="envoyerFormulaire" type="button" value="ok" name="envoyerFormulaire"><strong>Envoyer la commande</strong></button>
+        </form>
+        </div>
+    </main>
+    <footer>
+        <div class="packfooter">
+            <div class="pack">
+                <h2>Orinoco</h2>
+                <div class="div_footer"><a class="a_footer" href="#">
+                        <p>Devenir partenaire</p>
+                    </a>
+                </div>
+                <div class="div_footer"><a class="a_footer" href="#">
+                        <p>Mention légales</p>
+                    </a>
+                </div>
+                <div class="div_footer"><a class="a_footer" href="mailto:orinoco@hotmail.fr">
+                        <p>Contact</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+         let controleur = new Controleur()
+        controleur.afficherPanier()
+        let valPanier = new Controleur()
+        controleur.envoyerFormulaire()
+        
+    </script>
+</body>
+
+</html>

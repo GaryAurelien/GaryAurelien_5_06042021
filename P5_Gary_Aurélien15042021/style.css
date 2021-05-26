@@ -1,0 +1,398 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(160deg, #e78b07 0%, #8f5bfe 100%);
+  }
+  
+@font-face {
+  font-family: 'Kalam', cursive;
+  font-family: "KaushanScript";
+  src: url(font/KaushanScript-Regular.otf);
+}
+
+h1,h2,h3,p,a,label,select,th,td,button,div
+ {
+  font-family: Kalam ,Arial, KaushanScript, Impact, "Arial Black",  Verdana, sans-serif;
+}
+
+h1{
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+div {
+  font-size: 16px;
+}
+
+a {
+  white-space:nowrap;
+  text-decoration: none;
+  color: #8f5bfe;
+  height: 5%;
+}
+ 
+/*************************************INDEX.HTML************************************************/
+
+ /* --------------------------Header-------------------------*/
+
+.logo_orinoco {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: #f3e9f1;
+}
+
+.img_orinoco_index {
+  width: auto;
+  height: 120px;
+} 
+
+.img_orinoco {
+  width: auto;
+  height: 80px;
+} 
+
+.nav_header {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  width: 120px;
+  height: auto;
+}
+
+.fa-shopping-basket {
+  color: linear-gradient(160deg, #e78b07 0%, #8f5bfe 100%);
+}
+
+.a_panier, .a_retour_aceuil {
+  display: flex;
+}
+
+/*----------------------Main--------------------------*/
+
+h1 {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+
+/*-------------------main detail ourson--------------*/
+
+main{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ajouPanier {
+  background: white;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 50px 50px;
+  background: linear-gradient(160deg, #e78b07 0%, #8f5bfe 100%);
+  width: 270px;
+  margin-bottom: 50px;
+  margin-top: -80px;
+}
+
+.ajouPanier:hover {
+  transform: scale(1.1);
+  transition:all 0.5s ease-in-out;
+}
+
+/*---------------------------------------------------*/
+
+#conteneur, .conteneur_norber {
+  width: 100%;
+  height: 800%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 340px;
+  margin: 30px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 30px;
+  padding: 5px;
+  padding-bottom: 20px;
+  background-color: #f3e9f1;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#card_detail_ourson {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 30px;
+  padding: 5px;
+  padding-bottom: 20px;
+  background-color: #f3e9f1;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.imgOurs {
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  height:70%;
+}
+
+#imgOurs {
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  height:70%;
+}
+
+.card a {
+  width: 230px;
+  padding: 7px;
+  border-radius: 30px;
+  color: #f3e9f1;
+  background-image: linear-gradient(160deg, #e78b07 0%, #8f5bfe 100%);
+}
+
+.card a:hover {
+  transform: scale(1.1);
+  transition:all 0.5s ease-in-out;
+}
+
+/*--------------FOOTER-------------------*/
+
+footer {
+  height: auto;
+  width: 100%;
+  background: #f3e9f1;
+  
+}
+.packfooter {
+  width: 100%;
+  height: auto;
+  line-height: 10px;
+  display: flex;
+}
+
+.pack {
+  margin: 30px;
+}
+
+/*-----------------------------------FIN INDEX HTML---------------------------------------------*/
+
+
+/*************************************PANIER.HTML************************************************/
+
+#container_produits_panier{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-width: 60vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  border: 2px solid black;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#container_produits_panier div {
+  background-color: antiquewhite;
+  height: auto;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:5%;
+  padding-right: 5%;
+}
+
+.container_recapitulatif {
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.container_montant_total {
+  background-color: violet;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.btnSupprimer{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px; 
+  color: #f3e9f1;
+  background-image: linear-gradient(160deg, #e78b07 0%, #8f5bfe 100%); 
+}
+
+.btnSupprimer:hover {
+  transform: scale(1.1);
+  transition:all 0.3s ease-in-out;
+}
+
+#affichage_prix_total_panier{
+  background-color: antiquewhite;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:5%;
+  padding-right: 5%;
+  border: 5px solid black;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width:967px){
+  #container_produits_panier div{
+    flex-direction: column;
+    height: 150px;
+    padding-bottom: 10px;
+  }
+}
+
+
+/*-----------------------------------DEBUT FORMULAIRE---------------------------------------------*/
+
+form {
+  /* Uniquement centrer le formulaire sur la page */
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border: 5px solid #CCC;
+  border-radius: 1em;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: inline-block;
+  width: 85px;
+  text-align: right;
+}
+
+input, textarea {
+  /* Pour s'assurer que tous les champs texte ont la même police.
+     Par défaut, les textarea ont une police monospace */
+  font: 1em sans-serif;
+
+  /* Pour que tous les champs texte aient la même dimension */
+  width: 200px;
+  box-sizing: border-box;
+
+  /* Pour harmoniser le look & feel des bordures des champs texte */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* Pour souligner légèrement les éléments actifs */
+  border-color: #000;
+}
+
+textarea {
+  /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+  vertical-align: top;
+
+  /* Pour donner assez de place pour écrire du texte */
+  height: 5em;
+}
+
+.button {
+  /* Pour placer le bouton à la même position que les champs texte */
+  padding-left: 90px; /* même taille que les étiquettes */
+}
+
+#envoyerFomrulaire {
+  /* Cette marge supplémentaire représente grosso modo le même espace que celui
+     entre les étiquettes et les champs texte */
+  margin-top: 10px;
+  margin-left: .5em;
+  border-radius: 50px;
+}
+
+@media screen and (max-width:967px){
+  input{
+    width: 140px;
+  }
+
+}
+
+/*-----------------------------------FIN FORMULAIRE---------------------------------------------*/
+
+
+/*-----------------------------------FIN PANIER HTML---------------------------------------------*/
+
+
+/*-----------------------------------Confirm---------------------------------------------------*/
+
+.titre_confirm {
+  width: auto;
+}
+
+.container_confirmation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  padding: 5%;
+  border: solid black 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.confirmationOrder{
+  width: auto;
+  height: auto;
+  border: solid black 2px;
+}
+
+
+@media screen and (max-width:1260px){
+  .container_confirmation{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+
+    <title>Orinoco</title>
+    <meta name="description" content="Vente en ligne d'ours en peluche faits à la main de qualité Française.">
+    <meta name="robots" content="index,follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0, viewport-fit=cover">
+    <script src="https://kit.fontawesome.com/cd87985c5c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/ajax.js"></script>
+    <script src="js/views/detailOursonView.js" defer></script>
+    <script src="js/Controleur.js"></script>
+    <script src="js/views/panierView.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo_orinoco">
+            <a href="index.html" class="img_orinoco"  ><img class="img_orinoco" src="img/15675819263013_image1.png" alt="logo_orinoco" /></a>
+            <div class="nav_header">
+                <a class="a_retour_aceuil" href="index.html"><i class="fas fa-home"></i>Acceuil</a>
+                <a class="a_panier" href="panier.html"><i class="fas fa-shopping-basket"></i>Panier</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="conteneur"></div>
+        <button class="ajouPanier"><strong>Ajouter au panier</strong></button>
+    </main>
+    <footer>
+        <div class="packfooter">
+            <div class="pack">
+                <h2>Orinoco</h2>
+                <div class="div_footer"><a class="a_footer" href="#">
+                        <p>Devenir partenaire</p>
+                    </a>
+                </div>
+                <div class="div_footer"><a class="a_footer" href="#">
+                        <p>Mention légales</p>
+                    </a>
+                </div>
+                <div class="div_footer"><a class="a_footer" href="mailto:orinoco@hotmail.fr">
+                        <p>Contact</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let controleur = new Controleur()
+        controleur.afficherDetailOurson()
+    </script>
+</body>
+
+</html>
